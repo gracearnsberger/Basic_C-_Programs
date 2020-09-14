@@ -26,14 +26,26 @@ namespace DailyReportProject
 
             //Ask for their page number & display the number
             Console.WriteLine("What page number are you on?");
-            string pageNumber = Console.ReadLine();
-            int pgNum = Convert.ToInt32(pageNumber);
+            int pageNumber = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Your page number is: " + pageNumber);
 
             //Ask if they need help & display true or false value
             Console.WriteLine("Do you need help with anything? Please answer \"true\" or \"false\".");
-            string courseHelp = Console.ReadLine();
-            Console.WriteLine("You answered: " + courseHelp);
+            var seekHelp = Console.ReadLine();
+            bool needHelp = seekHelp == "true";
+            bool noHelping = seekHelp == "false";
+            if (noHelping)
+            {
+                Console.WriteLine("Okay! Let us know if you need any help!");
+            }
+            else if (needHelp)
+            {
+                Console.WriteLine("An instructor will be with you shortly");
+            }
+            else if (!noHelping && !needHelp)
+            { 
+                   Console.WriteLine("I only understand true or false answers, sorry!");
+            }
 
             //Ask about positive experiences & display back value
             Console.WriteLine("Were there any positive experiences you’d like to share? Please give specifics.");
