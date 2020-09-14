@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace GraceProgram
+namespace GraceProgramDisplay
 
 {
     class Program
