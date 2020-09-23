@@ -15,37 +15,38 @@ namespace WhileStatement
             int numberGuess = Convert.ToInt32(Console.ReadLine());
             bool guessedNumber = false;
 
-            while (guessedNumber == false);
-
-
-            switch (numberGuess)
+            while (guessedNumber == false)
             {
-                case 2:
-                    Console.WriteLine("You guessed 2. You're not right.");
-                    Console.WriteLine("Guess a number?");
-                    numberGuess = Convert.ToInt32(Console.ReadLine());
-                    break;
-                case 8:
-                    Console.WriteLine("You guessed 8. You're not right.");
-                    Console.WriteLine("Guess a number?");
-                    numberGuess = Convert.ToInt32(Console.ReadLine());
-                    break;
-                case 5:
-                    Console.WriteLine("You guessed 5. Try higher.");
-                    Console.WriteLine("Guess a number?");
-                    numberGuess = Convert.ToInt32(Console.ReadLine());
-                    break;
-                case 7:
-                    Console.WriteLine("You guessed 7! You're correct!");
-                    guessedNumber = true;
-                    break;
-                default:
-                    Console.WriteLine("You are wrong. Think middle of the numbers.");
-                    Console.WriteLine("Guess a number?");
-                    numberGuess = Convert.ToInt32(Console.ReadLine());
-                    break;
-            }
+
+                switch (numberGuess)
+                {
+                    case 2:
+                        Console.WriteLine("You guessed 2. You're not right.");
+                        Console.WriteLine("Guess a number?");
+                        numberGuess = Convert.ToInt32(Console.ReadLine());
+                        break;
+                    case 8:
+                        Console.WriteLine("You guessed 8. You're not right.");
+                        Console.WriteLine("Guess a number?");
+                        numberGuess = Convert.ToInt32(Console.ReadLine());
+                        break;
+                    case 5:
+                        Console.WriteLine("You guessed 5. Try higher.");
+                        Console.WriteLine("Guess a number?");
+                        numberGuess = Convert.ToInt32(Console.ReadLine());
+                        break;
+                    case 7:
+                        Console.WriteLine("You guessed 7! You're correct!");
+                        guessedNumber = true;
+                        break;
+                    default:
+                        Console.WriteLine("You are wrong. Think middle of the numbers.");
+                        Console.WriteLine("Guess a number?");
+                        numberGuess = Convert.ToInt32(Console.ReadLine());
+                        break;
+                }
                 Console.Read();
+            }
         }
     }
 }
