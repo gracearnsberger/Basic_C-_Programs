@@ -11,161 +11,158 @@ namespace ConsoleAppAssignment
     {
         static void Main(string[] args)
         {
-            //array of strings
-            //Console.WriteLine("Array");
-            //string[] candies = { "twix", "smarties", "m&m's", "gummy bears", "jelly beans", "swedish fish", "hershey's bar", "kit kat", "crunch bar", "mints" };
+            //====================== PART ONE START ======================//
+            //create a one-dimensional array of strings.
+            //string[] colorArray = new string[10] { "black", "blue", "green", "yellow", "orange", "pink", "green", "brown", "teal", "purple" };
 
-            ////ask for user input
-            //Console.WriteLine("Enter some text to be added to the end of candies.");
-            //string inputText = Console.ReadLine();
+            //ask the user to input some text.
+            //Console.WriteLine("Please enter some text to be added to the end of the colors: ");
+            //string x = Console.ReadLine();
+            //int y;
 
-            //loop that iterates through each string in the array and adds the user's text input to the end of each string 
-            //then prints off each string in the array on a separate line.
-            //for (int i=0; i < candies.Length; i++)
+            // A loop that iterates through each string in the array and adds the user's text input to the end of each string.
+            //then create a loop that prints off each string in the array on a separate line.
+            //for(y = 0; y < colorArray.Length; y++)
             //{
-            //    candies[i] = candies[i] + inputText;
+            //    colorArray.SetValue(colorArray.GetValue(y) + x, y);
+            //    Console.WriteLine(colorArray.GetValue(y));
             //}
-            //foreach (string c in candies)
+            //Console.ReadLine();
+            //====================== PART ONE END ======================//
+
+
+            //====================== PART TWO START ======================//
+            //create an infinite loop.
+            //while (2==2)
             //{
-            //    Console.WriteLine(c);
+            //    Console.WriteLine("Infinite Loop!!!!!!!!!!! :D");
             //}
 
-            //Console.Read();
-
-
-            //infinite loops
-            //Console.WriteLine("Loops");
-            //bool add = false;
-            //int loopCount = 0;
-            //using < and <= operators in loops
-            //while (!add)
+            //fix the infinite loop so that it will execute properly.
+            //int myNum = 15;
+            //while (myNum != 4)
             //{
-            //    if (loopCount < int.MaxValue / 100000000)
+            //    myNum--;
+            //    Console.WriteLine(myNum);
+            //}
+            //Console.ReadLine();
+            //====================== PART TWO END ======================//
+
+
+            //====================== PART THREE START ======================//
+            //create a loop where the comparison to continue iterating the loop is a “<” operator.
+            //int addition = 6;
+            //while (addition < 30)
+            //{
+            //    addition = addition + 6;
+            //    Console.WriteLine(addition);
+            //}
+            //Console.ReadLine();
+
+            //create a loop where the comparison to continue iterating the loop is a “<=” operator.
+            //int orEqual = 4;
+            //while (orEqual <= 40)
+            //{
+            //    orEqual = orEqual + 4;
+            //    Console.WriteLine(orEqual);
+            //}
+            //Console.ReadLine();
+            //====================== PART THREE END ======================//
+
+
+            //====================== PART FOUR START ======================//
+            //create a list of strings where each item in the list is unique.
+            //List<string> holidays = new List<string>() { "halloween", "christmas", "thanksgiving", "valentines day", "labor day", "fourth of july" };
+            //bool found = false;
+            //int i; 
+
+            //ask the user to input text to search for in the list.
+            //Console.WriteLine("Enter the name of a Holiday to see if it's on the list: ");
+            //string inputHoliday = Console.ReadLine().ToLower();
+
+            //add code to the loop that tells a user if they put in text that isn’t in the list.
+            //while (!holidays.Contains(inputHoliday))
+            //{
+            //    Console.WriteLine("Sorry but the holiday you entered was not found on my list.");
+            //    Console.Write("Enter the name of a holiday to see if it's on my list: ");
+            //    inputHoliday = Console.ReadLine().ToLower();
+            //}
+
+            //add code to the loop that stops it from executing once a match has been found.
+            //foreach (string holiday in holidays)
+            //{
+            //    if (holiday == inputHoliday)
             //    {
-            //        loopCount++;
-            //        Console.WriteLine("This infinite loop is on loop number: " + loopCount);
+            //        Console.WriteLine("{holiday} is on my list!");
+            //        break;
             //    }
+            //}
+
+            //create a loop that iterates through the list and then displays the index 
+            //of the list that contains matching text on the screen.
+            //for (i = 0; i < holidays.Count; i++)
+            //{
+            //    if (holidays[i].Contains(inputHoliday))
+            //    {
+            //        Console.WriteLine("{0}: {1}", i, holidays[i]);
+            //        found = true;
+            //    }
+            //}
+            //Console.ReadLine();
+            //====================== PART FOUR END ======================//
+
+
+            //====================== PART FIVE START ======================//
+            //create a list of strings that has at least two identical strings in the list. 
+            //List<string> videoGames = new List<string>() { "fortnite", "sims", "minecraft", "mortal kombat", "minecraft" };
+
+            //ask the user to select text to search for in the list.
+            //Console.WriteLine("Enter a video game to see if it's on my list and how many times it's on there: ");
+            //string userGame = Console.ReadLine().ToLower();
+
+            //add code to the loop that tells a user if they put in text that isn’t in the list.
+            //while (!videoGames.Contains(userGame))
+            //{
+            //    Console.WriteLine($"Sorry but the game {userGame}, is not on my list.");
+            //    userGame = Console.ReadLine().ToLower();
+            //}
+
+            //create a loop that iterates through the list and displays 
+            //the indices of the list that contain matching text on the screen.
+            //for (int i = 0; i < videoGames.Count; i++)
+            //{
+            //    if (videoGames[i] == userGame)
+            //    {
+            //        Console.WriteLine($"The game {userGame}, is on my list at the index {i}");
+            //    }
+            //}
+            //Console.ReadLine();
+
+            //====================== PART FIVE END ======================//
+
+
+
+            //====================== PART SIX START ======================//
+            //create a list of strings that has at least two identical strings in the list.
+            //List<string> seasons = new List<string>() { "fall", "winter", "autumn", "spring", "summer" };
+
+            //create a foreach loop that evaluates each item in the list, and displays a message 
+            //showing the string and whether or not it has already appeared in the list.
+            //foreach (string season in seasons)
+            //{
+            //    if (seasons.Contains(season))
+            //    {
+            //        Console.WriteLine($"{season}: Found in List ", season);
+            //    }
+
             //    else
             //    {
-            //        add = true;
-            //        Console.WriteLine("Applied fix. Infinite loop stopped at {0} loops", loopCount);
-            //    }
-
-            //}
-            //add = false;
-            //loopCount = 0;
-            //while (!add)
-            //{
-            //    if (loopCount <= int.MaxValue / 100000000)
-            //    {
-            //        loopCount++;
-            //        Console.WriteLine("This infinite loop is on loop number: " + loopCount);
-            //    }
-            //    else
-            //    {
-            //        add = true;
-            //        Console.WriteLine("Applied fix.Infinite loop stopped at {0}loops", loopCount);
+            //        Console.WriteLine($"{season}: Not found in List ", season);
             //    }
             //}
-            //Console.Read();
-
-            //create unique strings list
-            bool myList;
-            bool rational = false;
-            string cont, userChoice;
-            List<string> colors = new List<string>() { "Pink", "Blue", "Orange", "Green", "Blue", "Yellow", "Black", "White", "Black", "Purple" };
-            //ask the user to input text to search for in the list & print index
-            Console.WriteLine("Select a color & I will display the index numbers.");
-            int i = 0;
-            foreach (string c in colors)
-            {
-                Console.WriteLine(c + " " + i);
-                i++;
-            }
-            //while (!rational)
-            //    userChoice = Console.ReadLine().ToLower();
-                //tell a user if they put in text that isn’t in the list.
-                //myList = colors.Exists(x => x.ToLower() == userChoice);
-                //if (myList)
-                //{
-                //    rational = true;
-                //    for (int i = 0; i < colors.Count; i++)
-                //    {
-                //        if (userChoice == colors[i].ToLower())
-                //        {
-                //            Console.WriteLine("The index of the color you selected is: " + i);
-                //            break;
-                //        }
-                //    }
-                //}
-                //else
-                //{
-                //    Console.WriteLine("You did not pick a color from my list.");
-                //    Console.WriteLine("Would you like to try again? (yes/no)?");
-                //    cont = Console.ReadLine().ToLower();
-                //    if (cont == "no") { rational = true; }
-
-                //}
-                    Console.Read();
+            //Console.ReadLine();
+            //====================== PART SIX END ======================//
         }
-
-            
-
-            //list of strings with two identical words
-        //    Console.WriteLine("List of pets");
-        //    List<string> pets = new List<string>() { "cat", "dog", "fish", "lizard", "bird", "dog", "chicken", "spider", "snake", "hamster" };
-        //    List<string> samePets = new List<string>();
-        //    StringBuilder indicies = new StringBuilder();
-        //    //iterates through the list and then displays the indices of the list that contain matching text on the screen.
-        //    StringBuilder petsDisplay = new StringBuilder("[");
-        //    foreach (string p in pets)
-        //    {
-        //        petsDisplay.Append(" " + p + ",");
-        //        if (samePets.Exists(x => x == p))
-        //        {
-        //            Console.WriteLine(p + " has already appeared in the list");
-        //        }
-        //        else
-        //        {
-        //            samePets.Add(p);
-        //            Console.WriteLine(p + " has not appeared on the list before");
-        //        }
-
-        //    }
-        //    petsDisplay.Length = (petsDisplay.Length - 1);
-        //    petsDisplay.Append("]");
-        //    Console.WriteLine("Pets List" + petsDisplay);
-
-        //    //user input 
-        //    rational = false; 
-        //    while (!rational)
-        //    {
-        //        Console.WriteLine("Select a pet from the list to display the indicies:");
-        //        userChoice = Console.ReadLine().ToLower();
-        //        myList = pets.Exists(x => x.ToLower() == userChoice);
-
-        //        if (myList)
-        //        {
-        //            rational = true;
-        //            for (int i = 0; i < pets.Count; i++)
-        //            {
-        //                if (userChoice == pets[i].ToLower())
-        //                {
-        //                    indicies.Append(i + ",");
-        //                }
-        //            }
-        //            indicies.Length = (indicies.Length - 2);
-        //            Console.WriteLine("The pet \"{0}\" occurs in the list at the index of: {1}", userChoice, indicies);
-        //        }
-        //        else
-        //        {
-        //            Console.WriteLine("You did not pick a pet from the list.");
-        //            Console.WriteLine("Would you like to try again? (yes/no)?");
-        //            cont = Console.ReadLine().ToLower();
-        //            if (cont == "no") { rational = true; }
-        //        }
-        //    }
-        //    Console.Read();
-        //}
     }
 }
+
