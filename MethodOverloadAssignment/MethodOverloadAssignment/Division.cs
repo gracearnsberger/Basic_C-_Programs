@@ -11,7 +11,7 @@ namespace MethodOverloadAssignment
     {
         //have the method divide the data passed to it by 2.
         //create a method with output parameters.
-        public void divide(int int1, out int Total)
+        public void Divide(int int1, out int Total)
         {
             int int2 = 2;
             Total = int1 / int2;

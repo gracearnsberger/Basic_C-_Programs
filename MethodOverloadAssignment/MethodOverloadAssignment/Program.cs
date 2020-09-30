@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 
 namespace MethodOverloadAssignment
 {
-    //declare a class to be static.
-    static class Program
+    class Program 
     {
         static void Main(string[] args)
         {
@@ -20,9 +19,10 @@ namespace MethodOverloadAssignment
             int intU = Int32.Parse(Console.ReadLine());
 
             //call the method on that number & display the output to the screen.
-            divi.divide(intU, out int Total);
+            divi.Divide(intU, out int Total);
             Total = intU / 2;
             Console.WriteLine(Total);
+            Console.WriteLine(NewClass.Divide());
             Console.ReadLine();
 
             Subtract(8, 3);
