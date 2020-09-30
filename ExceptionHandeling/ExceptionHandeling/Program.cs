@@ -36,7 +36,6 @@ namespace ExceptionHandeling
             catch (FormatException ex)
             {
                 Console.WriteLine("Please type a whole number");
-                return;
             }
             catch (DivideByZeroException ex)
             {
