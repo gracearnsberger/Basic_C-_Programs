@@ -93,7 +93,7 @@ namespace ConsoleAppAssignment
             //{
             //    if (holiday == inputHoliday)
             //    {
-            //        Console.WriteLine("{holiday} is on my list!");
+            //        Console.WriteLine($"{holiday} is on my list!");
             //        break;
             //    }
             //}
@@ -144,21 +144,23 @@ namespace ConsoleAppAssignment
 
             //====================== PART SIX START ======================//
             //create a list of strings that has at least two identical strings in the list.
-            //List<string> seasons = new List<string>() { "fall", "winter", "autumn", "spring", "summer" };
+            //List<string> seasons = new List<string>() { "fall", "winter", "autumn", "spring", "summer", "fall", "autumn" };
+            //List<string> doubles = new List<string>();
 
-            //create a foreach loop that evaluates each item in the list, and displays a message 
+            //create a foreach loop that evaluates each item in the list, and displays a message
             //showing the string and whether or not it has already appeared in the list.
             //foreach (string season in seasons)
             //{
-            //    if (seasons.Contains(season))
-            //    {
-            //        Console.WriteLine($"{season}: Found in List ", season);
-            //    }
+            //    Console.WriteLine($"{season}");
 
-            //    else
+            //    foreach (string d in doubles)
             //    {
-            //        Console.WriteLine($"{season}: Not found in List ", season);
+            //        if (d == season)
+            //        {
+            //            Console.Write($" {season} Already appeared. ");
+            //        }
             //    }
+            //    doubles.Add(season);
             //}
             //Console.ReadLine();
             //====================== PART SIX END ======================//
