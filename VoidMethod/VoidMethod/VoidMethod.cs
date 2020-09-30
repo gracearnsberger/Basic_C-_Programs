@@ -6,17 +6,14 @@ using System.Threading.Tasks;
 
 namespace VoidMethod
 {
-    //in your clas create a void method that takes two integers as parameters. 
+    //in your class create a void method that takes two integers as parameters. 
     //have the method do a math operation on the first integer and display the second integer to the screen.
     public class VoidMethod
     {
-        public void num(int int1, int int2)
+        public void MultiplyNumber(int int1, int int2)
         {
-            int Answer = int1 * 10;
+            int Answer = int1 * int2;
             Console.WriteLine(Answer);
-            //call the method in the class, specifying the parameters by name.
-            Console.WriteLine(int2 + "is the second number.");
-
         }
     }
 }

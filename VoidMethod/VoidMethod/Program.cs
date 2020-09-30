@@ -11,9 +11,11 @@ namespace VoidMethod
         static void Main(string[] args)
         {
             //call the method in the class, passing in two numbers.
-            VoidMethod calc = new VoidMethod();
-            calc.num(2, 4);
+            VoidMethod calculate = new VoidMethod();
+            //call the method in the class, specifying the parameters by name.
+            calculate.MultiplyNumber(int1: 2, int2: 4);
             Console.ReadLine();
         }
+        
     }
 }
