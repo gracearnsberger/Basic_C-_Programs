@@ -11,6 +11,10 @@ namespace FileIOAssignment
     {
         static void Main(string[] args)
         {
+            //styling for the console :)
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            Console.BackgroundColor = ConsoleColor.DarkGreen;
+
             //asks the user for a number
             Console.WriteLine("Please enter a number: ");
             string num = string.Format(Console.ReadLine());
