@@ -11,26 +11,16 @@ namespace ConstantsAssignment
         static void Main(string[] args)
         {
             //create a const variable
-            const string myName = "Grace";
+            const string myString = " my project!";
             Person person = new Person("Grace");
+
             //create a variable using the keyword "var"
-            var myBirthday = "January 22nd";
-            Console.WriteLine("My name is " + myName +  ". My birthday is " + myBirthday);
+            var myGreeting = "Welcome to " + myString;
+            Console.WriteLine(myGreeting);
+            Console.WriteLine("{0}, your magic ID # is {1}", person.myName, person.myID);
             Console.ReadLine();
 
         }
     }
-    //chain two constructors together
-    public class Person
-    {
-        public Person(string name) : this(name, 100)
-        {
-
-        }
-        public Person(string name, int age)
-        {
-            age = age;
-            name = name;
-        }
-    }
+  
 }
