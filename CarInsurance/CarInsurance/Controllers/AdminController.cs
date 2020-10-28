@@ -14,36 +14,46 @@ namespace CarInsurance.Controllers
     {
         private InsuranceEntities db = new InsuranceEntities();
 
-        // GET: Admin
-        public ActionResult Index()
+        //create an Admin view for a site administrator. this page must:
+        //show all quotes issued, along with the user's first name, last name, and email address.
+        public ActionResult Admin()
         {
-            return View(db.Insurees.ToList());
-        }
-
-        // GET: Admin/Details/5
-        public ActionResult Details(int? id)
-        {
-            if (id == null)
+            using (InsuranceEntities db = new InsuranceEntities())
             {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+                var quotes = db.Quotes;
             }
-            Insuree insuree = db.Insurees.Find(id);
-            if (insuree == null)
-            {
-                return HttpNotFound();
-            }
-            return View(insuree);
-        }
-
-        // GET: Admin/Create
-        public ActionResult Create()
-        {
             return View();
         }
+            // GET: Admin
+            public ActionResult Index()
+            {
+                return View(db.Insurees.ToList());
+            }
 
-        // POST: Admin/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+            // GET: Admin/Details/5
+            public ActionResult Details(int? id)
+            {
+                if (id == null)
+                {
+                    return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+                }
+                Insuree insuree = db.Insurees.Find(id);
+                if (insuree == null)
+                {
+                    return HttpNotFound();
+                }
+                return View(insuree);
+            }
+
+            // GET: Admin/Create
+            public ActionResult Create()
+            {
+                return View();
+            }
+        
+            // POST: Admin/Create
+            // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
+            // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "Id,FirstName,LastName,EmailAddress,DateOfBirth,CarYear,CarMake,CarModel,DUI,SpeedingTickets,CoverageType,Quote")] Insuree insuree)

@@ -15,6 +15,8 @@ namespace CarInsurance.Models
     
     public partial class InsuranceEntities : DbContext
     {
+        internal object Quotes;
+
         public InsuranceEntities()
             : base("name=InsuranceEntities")
         {
