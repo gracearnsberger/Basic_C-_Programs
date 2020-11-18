@@ -1,1 +1,1 @@
-# Check out my C# programs I created
+# Check out my C# programs
